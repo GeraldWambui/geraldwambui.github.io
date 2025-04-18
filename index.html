@@ -3,58 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to Gerald Wambui's Site</title>
+  <title>Gerald Wambui</title>
+  <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1abc9c, #16a085);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
     }
 
-    h1 {
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f2027;
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
       font-size: 3rem;
     }
 
-    p {
+    header p {
       font-size: 1.2rem;
-      max-width: 600px;
+      margin-top: 10px;
+      color: #ccc;
     }
 
-    button {
-      padding: 0.7rem 1.5rem;
-      font-size: 1rem;
-      margin-top: 20px;
-      border: none;
-      border-radius: 8px;
-      background-color: white;
-      color: #16a085;
-      cursor: pointer;
-      transition: background-color 0.3s;
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
     }
 
-    button:hover {
-      background-color: #f0f0f0;
+    h2 {
+      margin-bottom: 20px;
+      border-left: 4px solid #1abc9c;
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .project {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-info {
+      margin-top: 10px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm Gerald Wambui 👋</h1>
-  <p>Welcome to my personal website. This is a simple site hosted with 
-GitHub Pages. More content coming soon!</p>
-  <button onclick="showMessage()">Say Hi</button>
 
-  <script>
-    function showMessage() {
-      alert("Thanks for visiting, friend! 😊");
-    }
-  </script>
+  <header>
+    <h1>👋 Hi, I'm Gerald Wambui</h1>
+    <p>Software Developer | Innovator | Open Source Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate software developer based in Kenya 🇰🇪 who loves 
+building modern applications,
+      exploring AI, and contributing to open-source. I enjoy making 
+technology work better for people.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>GitHub Portfolio</h3>
+      <p>
+        Check out my projects on GitHub where I experiment with web 
+development, automation, bots, and more.
+      </p>
+      <a href="https://github.com/GeraldWambui" target="_blank">
+        <i class="fab fa-github"></i> github.com/GeraldWambui
+      </a>
+    </div>
+    <!-- Add more projects here -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> <a 
+href="mailto:kighurugerald@gmail.com">kighurugerald@gmail.com</a></p>
+      <p><i class="fas fa-envelope"></i> <a 
+href="mailto:wainaina6@icloud.com">wainaina6@icloud.com</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+254790939190">+254 790 
+939 190</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+25492383672">+254 923 
+836 72</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Gerald Wambui. Built with ❤️ and HTML/CSS/JS.
+  </footer>
+
 </body>
 </html>
 
